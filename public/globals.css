@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+}
+
+.welcome {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.aiGeneratorTitle {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.formContainer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.instructions {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.hint {
+  margin-top: 1rem;
+  color: grey;
+}
+
+.recipe {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.generating {
+  color: orange;
+}
