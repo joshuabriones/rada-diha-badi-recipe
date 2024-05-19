@@ -38,26 +38,6 @@ const Home = () => {
       <Header />
       <Main getRecipe={getRecipe} recipe={recipe} generating={generating} />
       <Results generating={generating} recipe={recipe} />
-
-      {/* <main>
-        <div className="text-center mt-8">
-          <form onSubmit={getRecipe} id="recipes-generator-form">
-            <input
-              type="text"
-              placeholder="Type the ingredients..."
-              autoFocus
-              required
-              className="p-2"
-              id="user-instructions"
-              name="instructions"
-            />
-            <input type="submit" className="py-2 px-4 text-lg mt-4" />
-          </form>
-          <div className="mt-4 text-gray-500">i.e: Tofu, Fish or Chocolate</div>
-        </div>
-
-       
-      </main> */}
     </>
   );
 };
