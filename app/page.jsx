@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
-import Typewriter from "typewriter-effect";
+import Header from "./_components/Header";
+import Main from "./_components/Main";
+import Results from "./_components/Results";
 
 const Home = () => {
   const [recipe, setRecipe] = useState("");
@@ -29,16 +31,15 @@ const Home = () => {
     }
   };
 
+  console.log(recipe);
+
   return (
-    <div className="max-w-[800px] my-0 mx-auto p-4">
-      <header>
-        <h1>
-          <span className="">Welcome to:</span>
-          <br />
-          <span className="">AI recipes generator</span>
-        </h1>
-      </header>
-      <main>
+    <>
+      <Header />
+      <Main getRecipe={getRecipe} recipe={recipe} generating={generating} />
+      <Results generating={generating} recipe={recipe} />
+
+      {/* <main>
         <div className="text-center mt-8">
           <form onSubmit={getRecipe} id="recipes-generator-form">
             <input
@@ -55,27 +56,9 @@ const Home = () => {
           <div className="mt-4 text-gray-500">i.e: Tofu, Fish or Chocolate</div>
         </div>
 
-        {generating ? (
-          <div className="mt-8">
-            <span className="text-orange-400">⏳</span> Generating a recipe that
-            includes {recipe}..
-          </div>
-        ) : (
-          recipe && (
-            <div className="mt-8" id="recipe">
-              <Typewriter
-                options={{
-                  strings: recipe,
-                  autoStart: true,
-                  delay: 10,
-                }}
-              />
-            </div>
-          )
-        )}
-      </main>
-      <footer>FOOTER NI MGA BADI</footer>
-    </div>
+       
+      </main> */}
+    </>
   );
 };
 
