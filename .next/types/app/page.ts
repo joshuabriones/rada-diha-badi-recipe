@@ -1,4 +1,4 @@
-// File: /Users/joshua/Desktop/Projects/applied-ai/rada-diha-badi-recipe/app/page.jsx
+// File: D:\Downloads\Capstone and Research\jwt\rada-diha-badi-recipe\app\page.jsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

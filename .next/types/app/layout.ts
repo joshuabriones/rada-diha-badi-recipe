@@ -1,4 +1,4 @@
-// File: /Users/joshua/Desktop/Projects/applied-ai/rada-diha-badi-recipe/app/layout.jsx
+// File: D:\Downloads\Capstone and Research\jwt\rada-diha-badi-recipe\app\layout.jsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
