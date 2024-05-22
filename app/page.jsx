@@ -15,7 +15,7 @@ const Home = () => {
     const instructions = event.target.instructions.value;
     const prompt = `Provide me with a detailed recipe that contains the following ingredients: ${instructions}. Ensure to include precise measurements for each ingredient.`;
     const context =
-      "Start with a title. Divide the text into two parts/paragraphs: ingredients and instructions. Title the ingredients section as 'Ingredients:' each ingredient inputted like with a dash put a <br> tag after them. Add an emoticon of the dish. Include <br/><br/> before the instructions. Number each step in the instructions and start each step with a <br/> tag before the number. Make the instructions detailed, with a tone and style similar to Gordon Ramsay, including exclamations and emphasis where appropriate.Dont put asterisk.";
+      "Start with a title. Divide the text into two parts/paragraphs: ingredients and instructions. Title the ingredients section as 'Ingredients:' and list each ingredient in bullet form with a <br/> tag before each ingredient. Add an emoticon of the dish. Include <br/><br/> before the instructions. Number each step in the instructions and start each step with a <br/> tag before the number. Make the instructions detailed, with a tone and style similar to Gordon Ramsay, including exclamations and emphasis where appropriate. The AI should only accept food related and if it's not it will not give the recipe";
     const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
     setGenerating(true);
