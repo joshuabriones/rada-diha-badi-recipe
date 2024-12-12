@@ -3,7 +3,7 @@ import Image from "next/image";
 const Main = ({ getRecipe, recipe, generating }) => {
   return (
     <main className="w-full mt-14">
-      <div className="flex justify-between px-[10%]">
+      <div className="flex flex-col gap-5 md:gap-0 md:flex-row justify-between px-[10%]">
         <div className="">
           <p className="text-lg text-green-500 font-bold">RADA DIHA BADI</p>
           <h1 className="text-7xl font-bold">
@@ -40,7 +40,7 @@ const Main = ({ getRecipe, recipe, generating }) => {
           alt="Picture of the author"
           width={500}
           height={500}
-          className=""
+          className="w-2/3 md:w-full"
         />
       </div>
     </main>
